@@ -1,0 +1,20 @@
+<html>
+<head>
+    <script src="node_modules/mathjs/dist/math.min.js"></script>
+    <script src="tests/classes.js"></script>
+    <script src="tests/protos.js"></script>
+    <script src="tests/run.js"></script>
+
+    <script>
+        runTest({
+            mathjs: math,
+            attempts: 1000,
+            instancesNum: 100000,
+            testClassesFunc: testClasses,
+            testProtosFunc: testProtos,
+        });
+    </script>
+</head>
+<body>
+</body>
+</html>
