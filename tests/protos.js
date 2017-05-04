@@ -4,9 +4,7 @@
     var root = this;
     
     var testProtos = function (N){
-        function YParent(){};
         function Y(){};
-        Y.prototype = Object.create(YParent.prototype);
 
         var t1 = Date.now();
         for(var i = 0; i<= N; i++){
@@ -14,7 +12,7 @@
         }
 
         var t2 = Date.now();
-        console.log('Proto completed creating ', N, ' instances in: ', t2 - t1, 'ms');
+        // console.log('Proto completed creating ', N, ' instances in: ', t2 - t1, 'ms');
 
         return t2 - t1;
     }

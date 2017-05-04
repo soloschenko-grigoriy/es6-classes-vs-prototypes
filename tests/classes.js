@@ -4,8 +4,7 @@
     var root = this;
 
     var testClasses = function (N){
-        class Parent{};
-        class X extends Parent{};
+        class X{};
 
         var t1 = Date.now();
         for(var i = 0; i<= N; i++){
@@ -13,7 +12,7 @@
         }
         var t2 = Date.now();
 
-        console.log('Class completed creating ', N, ' instances in: ', t2 - t1, 'ms');
+        // console.log('Class completed creating ', N, ' instances in: ', t2 - t1, 'ms');
 
         return t2 - t1;
     }
